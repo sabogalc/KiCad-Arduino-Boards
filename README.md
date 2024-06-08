@@ -1,2 +1,16 @@
-# KiCad-Arduino-Boards
-A collection of Arduino boards recreated from scratch in KiCad. Legacy USB connectors have been replaced with USB-C where applicable.
+# KiCad Arduino Boards
+This is a collection of eight Arduino boards recreated from scratch in KiCad version 8.
+
+The project came about when I was given an Arduino Uno R3 for use in a class project which you can read [here](https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/Remote%20Temperature%20Monitoring%20Project.pdf). Despite being in my final year of undergraduate electrical engineering, I had never worked with an Arduino before, and I found the board to be quite useful.
+
+However, I didn't enjoy needing to use a USB-B printer cable to connect the board to my computer, and because I knew that the hardware was open source, I took it upon myself to recreate the board and add a USB-C connector to it. Of course, I could have just bought an R4 Minima and gotten a board directly from Arduino with USB-C on it and for less money, but where's the fun in that? 
+
+The design files for all of the Arduino Boards that I could find are made in either EAGLE or Altium, both of which have KiCad importers. Importing designs comes with artifcating and other byproducts however, and while importing the boards was useful for me to see where to place components and how to route tracks, the schematic and board result with an import aren't 100%.
+
+At this point, I figured I had a hugely popular open-source board, so someone probably already recreated it in KiCad either in part or in full. I found [this repository](https://github.com/rheingoldheavy/arduino_uno_r3_from_scratch) that had a schematic and a BOM, and [this one](https://github.com/Jeff-Russ/Arduino_Uno_Template) that had the framework for a bare board, so these projects provided an avenue for me to get started. I found [a third page](https://gist.github.com/yahyatawil/ee6ad731bcf5a5b37dcf2cac04245fbe) with only a BOM, but a problem I ran into with all three of these resources was that I couldn't find a part number or footprint for the reset switch that could be easily obtained from DigiKey or Mouser. After about 45 minutes of manually sifting through different SMT buttons that both offered, I found a compatible footprint with the TS06-667-30-BK-100-G-SMT-TR by CUI Devices.
+
+Now I just had to do the actual work of recreating the schematic and PCB, and doing so by following the EAGLE imported version was not too difficult. Below is a comparison of the imported UNO R3 board side-by-side with my completed board. I would say that the most notable differences are in the silkscreen labeling and also having the 3D models with the included KiCad footprints as opposed to the imported ones.
+
+![Screenshot 2024-06-07 182328](https://github.com/sabogalc/KiCad-Arduino-Boards/assets/53708281/d2d07999-eb65-429c-b417-9989f5a76a95)
+
+After finishing this board, I figured I would do the R3 SMD as well since it is essentially the same board. I then become pretty well-versed with designing around the Uno in KiCad, so I figured I would do both revisions of the R4 as well. This kept up until I had recreated other boards I found on their website that did not use USB-C and also seemed to be pretty popular with the community. To read more about each individual board, see the `README` in their respective folders.

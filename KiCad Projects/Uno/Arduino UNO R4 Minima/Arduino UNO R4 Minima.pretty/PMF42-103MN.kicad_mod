@@ -1,0 +1,229 @@
+(footprint "PMF42-103MN"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f18ecea1-ddae-4026-ad7f-08db1d39858d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PMF42-103MN"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "be52b39d-e467-497b-9b55-cb78eab443ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "PMF42-103MN"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cabe7ecb-04c1-4e03-b63e-b78905cdd22d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "946e122a-4b63-45ac-b5d3-b0128e6fc9af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c984bbf-dc1d-4439-971c-a5029a9c9fb0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.794 2.667)
+		(end -2.794 -2.667)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9589d122-1700-4ff9-9fc5-17c5ba984b06")
+	)
+	(fp_line
+		(start 2.794 -2.667)
+		(end -2.794 -2.667)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4cd180aa-444f-4795-8d96-2228d3b4f60f")
+	)
+	(fp_line
+		(start 2.794 2.667)
+		(end -2.794 2.667)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "149c3a52-3a2e-4a25-87a5-66c046a97c7a")
+	)
+	(fp_line
+		(start 2.794 2.667)
+		(end 2.794 -2.667)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4dbfa568-5887-4924-9668-773f4fa3d636")
+	)
+	(fp_line
+		(start -2.4 2.4)
+		(end -2.4 -2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eece66e5-cb21-4aea-ae9d-b446312aa984")
+	)
+	(fp_line
+		(start 2.4 -2.4)
+		(end -2.4 -2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0dc6a9a6-64bf-411a-862f-e7da8dbf47ad")
+	)
+	(fp_line
+		(start 2.4 2.4)
+		(end -2.4 2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8c07c32f-16c9-4b6d-bcb6-68cb9b670e5e")
+	)
+	(fp_line
+		(start 2.4 2.4)
+		(end 2.4 -2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0921e414-bbed-4436-bafb-464714f2265c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b84d2439-1ed6-4b44-a593-6a8beadd6347")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at -1.75 0 180)
+		(size 0.0254 0.0254)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "cd0c2776-daa4-43b4-a37c-d7c2ee28a619")
+	)
+	(pad "1" smd custom
+		(at -1 -0.8 90)
+		(size 0.000001 0.000001)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.000001)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy -1.6 0) (xy -1.9 -1.5) (xy 0.3 -1.5)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "8a8cdbb0-29a6-4f8a-a480-ec424a947dfb")
+	)
+	(pad "2" smd custom
+		(at 1 -0.8 90)
+		(size 0.000001 0.000001)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0.000001)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy -1.6 0) (xy -1.9 1.50001) (xy 0.3 1.50001)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "7ee822ea-ebc9-45e1-abfe-321195dcbf81")
+	)
+	(pad "2" smd circle
+		(at 1.75 0)
+		(size 0.0254 0.0254)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "4a4564e8-2b4d-4314-8b8f-6c14dda431d7")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Cenker_CKCS4018.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

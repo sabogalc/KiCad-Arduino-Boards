@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Arduino Uno SMD")(type "KiCad")(uri "${KIPRJMOD}/Arduino Uno SMD.kicad_sym")(options "")(descr ""))
+)

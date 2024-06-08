@@ -1,0 +1,74 @@
+COMPONENTS_DATA_START
+### Component Category Value Comment
+### v = value, p = package, c = manufacturer code, r = rating, m = misc, s = status
+###
+FID1 p Fiducial_1mm_Mask2mm
+FID1 v Fiducial
+FID2 p Fiducial_1mm_Mask2mm
+FID2 v Fiducial
+U3 p VQFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm
+U3 v ATMEGA328P-MU
+J4 p PinHeader_2x03_P2.54mm_Vertical
+J4 v M20-9980345
+R1 p R_0603_1608Metric
+R1 v 5.1k
+D4 p LED_0805_2012Metric
+D4 v GREEN
+SW1 p B3U-1000PM
+SW1 v B3U-1000PM
+D2 p LED_0805_2012Metric
+D2 v GREEN
+Y1 p Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm
+Y1 v CSTNE16M0V530000R0
+J3 p USB_C_Receptacle_GCT_USB4110
+J3 v USB_C_Receptacle_USB2.0_16P
+D3 p LED_0805_2012Metric
+D3 v RED
+R2 p R_0603_1608Metric
+R2 v 5.1k
+D5 p LED_0805_2012Metric
+D5 v YELLOW
+C4 p C_0603_1608Metric
+C4 v 100n
+RN1 p R_Array_Convex_4x0612
+RN1 v 1k
+J2 p PinHeader_1x15_P2.54mm_Vertical
+J2 v PH1-15-UA
+C8 p C_0603_1608Metric
+C8 v 1u
+FID3 p Fiducial_1mm_Mask2mm
+FID3 v Fiducial
+C2 p CP_EIA-3216-10_Kemet-I
+C2 v 4.7u
+C5 p CP_EIA-3216-10_Kemet-I
+C5 v 4.7u
+U2 p SOT-223-3_TabPin2
+U2 v NCP1117-5.0_SOT223
+C1 p C_0603_1608Metric
+C1 v 100n
+C9 p C_0603_1608Metric
+C9 v 100n
+C7 p C_0603_1608Metric
+C7 v 1u
+RN2 p R_Array_Convex_4x0612
+RN2 v 1k
+FID4 p Fiducial_1mm_Mask2mm
+FID4 v Fiducial
+C3 p C_0603_1608Metric
+C3 v 1u
+TP2 p TestPoint_Pad_D1.0mm
+TP2 v TestPoint
+J1 p PinHeader_1x15_P2.54mm_Vertical
+J1 v PH1-15-UA
+D1 p D_SMP_DO-220AA
+D1 v SS1P3L-M3/84A
+TP1 p TestPoint_Pad_D1.0mm
+TP1 v TestPoint
+F1 p Fuse_0603_1608Metric
+F1 v PTC
+C6 p C_0603_1608Metric
+C6 v 100n
+U1 p SSOP-28_5.3x10.2mm_P0.65mm
+U1 v FT232RL
+COMPONENTS_DATA_END
+### END
