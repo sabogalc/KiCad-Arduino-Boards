@@ -1,16 +1,35 @@
 # KiCad Arduino Boards
-This is a collection of eight Arduino boards recreated from scratch in KiCad version 8.
 
-The project came about when I was given an Arduino Uno R3 for use in a class project which you can read [here](https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/Remote%20Temperature%20Monitoring%20Project.pdf). Despite being in my final year of undergraduate electrical engineering, I had never worked with an Arduino before, and I found the board to be quite useful.
+## Introduction
+This repository contains KiCad version 8 design files for eight different Arduino boards that have been recreated from scratch. I was first inspired to work on this project when I received an Arduino Uno R3 for a class project (which you can read [here](https://github.com/sabogalc/KiCad-Arduino-Boards/blob/main/Remote%20Temperature%20Monitoring%20Project.pdf)). Although I had never used an Arduino before, I found it quite useful and versatile. However, I wanted to make some changes to better suit my needs.
 
-However, I didn't enjoy needing to use a USB-B printer cable to connect the board to my computer, and because I knew that the hardware was open source, I took it upon myself to recreate the board and add a USB-C connector to it. Of course, I could have just bought an R4 Minima and gotten a board directly from Arduino with USB-C on it and for less money, but where's the fun in that? 
+## Project Motivation
+While working with the Arduino Uno R3, I was frustrated by the need for a USB-B printer cable to use it. Since the Arduino hardware is open source, I decided to recreate the board with a USB-C connector. Additionally, I learned that Arduino boards are not made in KiCad, so I figured this project could also have another benefit in making the designs more open and accessible. Although buying an R4 Minima that already comes with USB-C would have been easier and less expensive, I enjoyed the challenge of re-designing the board myself.
 
-The design files for all of the Arduino Boards that I could find are made in either EAGLE or Altium, both of which have KiCad importers. Importing designs comes with artifcating and other byproducts however, and while importing the boards was useful for me to see where to place components and how to route tracks, the schematic and board result with an import aren't 100%.
+## Design Process
+Every Adruino board I could find is made in either EAGLE or Altium, and KiCad has importers for both of these formats. However, importing designs always comes with a level of artifacting and other inaccuracies. The effort to correct the imports would be comparable to remaking the board from scratch, so I opted for the latter since it would produce a cleaner end result. 
 
-At this point, I figured I had a hugely popular open-source board, so someone probably already recreated it in KiCad either in part or in full. I found [this repository](https://github.com/rheingoldheavy/arduino_uno_r3_from_scratch) that had a schematic and a BOM, and [this one](https://github.com/Jeff-Russ/Arduino_Uno_Template) that had the framework for a bare board, so these projects provided an avenue for me to get started. I found [a third page](https://gist.github.com/yahyatawil/ee6ad731bcf5a5b37dcf2cac04245fbe) with only a BOM, but a problem I ran into with all three of these resources was that I couldn't find a part number or footprint for the reset switch that could be easily obtained from DigiKey or Mouser. After about 45 minutes of manually sifting through different SMT buttons that both offered, I found a compatible footprint with the TS06-667-30-BK-100-G-SMT-TR by CUI Devices.
+Given the popularity and open-source nature of Arduino boards, I assumed that partial or complete KiCad versions might already exist. The following repositories were helpful for getting started:
+- [Arduino Uno R3 From Scratch](https://github.com/rheingoldheavy/arduino_uno_r3_from_scratch): Schematic and BOM
+- [Arduino Uno KiCad Template](https://github.com/Jeff-Russ/Arduino_Uno_Template): Bare board layout
+- [Arduino UNO R3 BOM](https://gist.github.com/yahyatawil/ee6ad731bcf5a5b37dcf2cac04245fbe): BOM only
 
-Now I just had to do the actual work of recreating the schematic and PCB, and doing so by following the EAGLE imported version was not too difficult. Below is a comparison of the imported UNO R3 board side-by-side with my completed board. I would say that the most notable differences are in the silkscreen labeling and also having the 3D models with the included KiCad footprints as opposed to the imported ones.
+Even with these resources, I had to find a reset switch footprint myself, but eventually I landed on a compatible one with the TS06-667-30-BK-100-G-SMT-TR by CUI Devices. I now had every piece I needed to make a schematic and PCB, and while doing the PCB layout I would consistently reference the imported design and try to make the component placement and routing as close to the original as possible.
 
-![Screenshot 2024-06-07 182328](https://github.com/sabogalc/KiCad-Arduino-Boards/assets/53708281/d2d07999-eb65-429c-b417-9989f5a76a95)
+## Visual Comparison
+Below is a comparison of the imported UNO R3 board and my completed board, highlighting the differences and benefits in re-making the board from scratch. The most apparent differences are in the silkscreen labeling and the included 3D models of the components:
 
-After finishing this board, I figured I would do the R3 SMD as well since it is essentially the same board. I then become pretty well-versed with designing around the Uno in KiCad, so I figured I would do both revisions of the R4 as well. This kept up until I had recreated other boards I found on their website that did not use USB-C and also seemed to be pretty popular with the community. To read more about each individual board, see the `README` in their respective folders.
+![Comparison Image](https://github.com/sabogalc/KiCad-Arduino-Boards/assets/53708281/d2d07999-eb65-429c-b417-9989f5a76a95)
+
+## Boards Included
+This repository includes designs for:
+- Arduino Uno R3
+- Arduino Uno R3 SMD
+- Arduino Uno R4 Minima
+- Arduino Uno R4 WiFi (this one may have some issues; see its folder for details)
+- Arduino Leonardo
+- Arduino Micro
+- Arduino Nano
+- Arduino Mega 2560
+
+For details about each board, refer to the `README` file in their respective folders.
